@@ -43,7 +43,7 @@ def play(my_songs)
   puts "Please enter a song name or number: "
   user_response = gets.chomp
   if my_songs.has_key?(user_response)
-    system open my_songs[user_response]
+    system "open #{my_songs[user_response]}"
   else 
     puts "Invalid input, please try again"
   end 
